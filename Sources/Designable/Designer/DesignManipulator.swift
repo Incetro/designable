@@ -37,6 +37,13 @@ public protocol DesignManipulator {
         withImmediateCall immediateCall: Bool
     )
 
+    /// Redesign the given object
+    /// - Parameters:
+    ///   - designable: target object instance
+    ///   - animationDuration: changing appearance animation duration
+    ///   - isAnimated: true if need to animate appearance changing   
+    func redesign<D: Designable>(_ designable: D, animationDuration: Double, isAnimated: Bool)
+
     /// Set a new appearance
     ///
     /// - Parameters:
@@ -74,5 +81,14 @@ extension DesignManipulator {
         for keyPath: KeyPath<Appearance, D.Appearance>
     ) {
         add(designable: designable, for: keyPath, withImmediateCall: true)
+    }
+
+    /// Redesign the given object
+    /// - Parameters:
+    ///   - designable: target object instance
+    ///   - animationDuration: changing appearance animation duration
+    ///   - isAnimated: true if need to animate appearance changing
+    public func redesign<D: Designable>(_ designable: D) {
+        redesign(designable, animationDuration: 0.25, isAnimated: true)
     }
 }

@@ -147,6 +147,26 @@ extension Designer: DesignManipulator {
         }
     }
 
+    /// Redesign the given object
+    /// - Parameters:
+    ///   - designable: target object instance
+    ///   - animationDuration: changing appearance animation duration
+    ///   - isAnimated: true if need to animate appearance changing   
+    public func redesign<D: Designable>(_ designable: D, animationDuration: Double, isAnimated: Bool) {
+        let animationBlock = {
+            self.observers.forEach { object, block in
+                if let designableObject = object as? DesignableProtocol, designableObject === designable {
+                    block(designable)
+                }
+            }
+        }
+        if isAnimated {
+            UIView.animate(withDuration: animationDuration, animations: animationBlock)
+        } else {
+            animationBlock()
+        }
+    }
+
     /// Set a new appearance
     ///
     /// - Parameters:

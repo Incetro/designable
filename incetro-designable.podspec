@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
   spec.name          = 'incetro-designable'
   spec.module_name   = 'Designable'
-  spec.version       = '1.0.0'
+  spec.version       = '1.0.1'
   spec.license       = 'MIT'
   spec.authors       = { 'incetro' => 'incetro@ya.ru' }
   spec.homepage      = "https://github.com/Incetro/designable.git"
