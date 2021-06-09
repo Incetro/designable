@@ -161,7 +161,7 @@ extension Dark: Appearance {
 
 And all Designable observers will be redesigned after `designer.set(appearance:)`. 
 
-You can see more in the [example folder](https://github.com/Incetro/designable/Example)
+You can see more in the [example folder](https://github.com/Incetro/designable/tree/main/Example)
 
 ## Requirements
 - iOS 12.1+ / macOS 10.12+ / tvOS 12.1+ / watchOS 3.1+
