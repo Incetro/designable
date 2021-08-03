@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,14 +13,14 @@
 		3379249526676083007674C0 /* AnyAppearanceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3379249426676082007674C0 /* AnyAppearanceType.swift */; };
 		3379249C266762FF007674C0 /* Designer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3379249B266762FF007674C0 /* Designer.swift */; };
 		337924ED266817DD007674C0 /* AnyAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3379249626676093007674C0 /* AnyAppearance.swift */; };
-		88825532DEB3E427045D3D02 /* Pods_Designable_IOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D092DA48131B8C55053526 /* Pods_Designable_IOS.framework */; };
 		CB11240E256BF9AE00215E47 /* Designable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB30D6C9256ADB0C00EE2C61 /* Designable.framework */; };
 		CB112437256BF9EC00215E47 /* Designable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB30D6F8256ADB5000EE2C61 /* Designable.framework */; };
 		CB1124F2256C09B500215E47 /* MainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1124EF256C09B400215E47 /* MainTests.swift */; };
 		CB112527256C0A8700215E47 /* MainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1124EF256C09B400215E47 /* MainTests.swift */; };
+		CB22D93A26B8807800F5BCE3 /* ObserverList.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB22D93926B8807800F5BCE3 /* ObserverList.xcframework */; };
+		CB22D93B26B8807800F5BCE3 /* ObserverList.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB22D93926B8807800F5BCE3 /* ObserverList.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CB30D71D256ADE2E00EE2C61 /* Designable.h in Headers */ = {isa = PBXBuildFile; fileRef = CB30D71B256ADE2E00EE2C61 /* Designable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB30D71F256ADE2E00EE2C61 /* Designable.h in Headers */ = {isa = PBXBuildFile; fileRef = CB30D71B256ADE2E00EE2C61 /* Designable.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E1540C16D63CFF78727D3CFB /* Pods_Designable_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7EC138FAFFE313EF5E1F1C5 /* Pods_Designable_tvOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,34 +40,37 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CB22D93C26B8807800F5BCE3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CB22D93B26B8807800F5BCE3 /* ObserverList.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		02CAEC26F056791F655A8C18 /* Pods-Designable tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Designable tvOS.debug.xcconfig"; path = "Target Support Files/Pods-Designable tvOS/Pods-Designable tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		0E88D285AC897DFE757CCF2F /* Pods-Designable tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Designable tvOS.release.xcconfig"; path = "Target Support Files/Pods-Designable tvOS/Pods-Designable tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		16E0CA8E52FF4CC28FEB80AC /* Pods-Designable watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Designable watchOS.debug.xcconfig"; path = "Target Support Files/Pods-Designable watchOS/Pods-Designable watchOS.debug.xcconfig"; sourceTree = "<group>"; };
-		1B3E608E494781441EA4D4AE /* Pods-Designable macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Designable macOS.release.xcconfig"; path = "Target Support Files/Pods-Designable macOS/Pods-Designable macOS.release.xcconfig"; sourceTree = "<group>"; };
-		2B3EF0EAE78EB811A026FD2B /* Pods_Designable_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Designable_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		33792484266693F4007674C0 /* Designable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Designable.swift; sourceTree = "<group>"; };
 		337924892667534D007674C0 /* DesignManipulator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignManipulator.swift; sourceTree = "<group>"; };
 		3379249226676014007674C0 /* DesignableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableProtocol.swift; sourceTree = "<group>"; };
 		3379249426676082007674C0 /* AnyAppearanceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyAppearanceType.swift; sourceTree = "<group>"; };
 		3379249626676093007674C0 /* AnyAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyAppearance.swift; sourceTree = "<group>"; };
 		3379249B266762FF007674C0 /* Designer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Designer.swift; sourceTree = "<group>"; };
-		52CE241A1C6D98C8B9D1EC1B /* Pods-Designable macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Designable macOS.debug.xcconfig"; path = "Target Support Files/Pods-Designable macOS/Pods-Designable macOS.debug.xcconfig"; sourceTree = "<group>"; };
-		52D092DA48131B8C55053526 /* Pods_Designable_IOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Designable_IOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5DC616DC2BF1BBBD425B6A80 /* Pods-Designable IOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Designable IOS.debug.xcconfig"; path = "Target Support Files/Pods-Designable IOS/Pods-Designable IOS.debug.xcconfig"; sourceTree = "<group>"; };
-		68101327D9A2603DCE1B6143 /* Pods-Designable watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Designable watchOS.release.xcconfig"; path = "Target Support Files/Pods-Designable watchOS/Pods-Designable watchOS.release.xcconfig"; sourceTree = "<group>"; };
-		695DB6BDF2CFA3E4AAE0707D /* Pods-Designable IOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Designable IOS.release.xcconfig"; path = "Target Support Files/Pods-Designable IOS/Pods-Designable IOS.release.xcconfig"; sourceTree = "<group>"; };
-		C7EC138FAFFE313EF5E1F1C5 /* Pods_Designable_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Designable_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB112409256BF9AE00215E47 /* DesignableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesignableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB112432256BF9EC00215E47 /* DesignableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesignableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB112444256BFA9E00215E47 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB112490256C024A00215E47 /* LinuxMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinuxMain.swift; sourceTree = "<group>"; };
 		CB1124EF256C09B400215E47 /* MainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTests.swift; sourceTree = "<group>"; };
+		CB22D93926B8807800F5BCE3 /* ObserverList.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ObserverList.xcframework; path = Carthage/Build/ObserverList.xcframework; sourceTree = "<group>"; };
 		CB30D6C9256ADB0C00EE2C61 /* Designable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Designable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB30D6F8256ADB5000EE2C61 /* Designable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Designable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB30D71B256ADE2E00EE2C61 /* Designable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Designable.h; sourceTree = "<group>"; };
 		CB30D71C256ADE2E00EE2C61 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D670D6E68D093E30796553F6 /* Pods_Designable_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Designable_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88825532DEB3E427045D3D02 /* Pods_Designable_IOS.framework in Frameworks */,
+				CB22D93A26B8807800F5BCE3 /* ObserverList.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +102,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1540C16D63CFF78727D3CFB /* Pods_Designable_tvOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,32 +135,6 @@
 			path = Appearance;
 			sourceTree = "<group>";
 		};
-		61D42C5D7048629AF03883F0 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				52D092DA48131B8C55053526 /* Pods_Designable_IOS.framework */,
-				D670D6E68D093E30796553F6 /* Pods_Designable_macOS.framework */,
-				C7EC138FAFFE313EF5E1F1C5 /* Pods_Designable_tvOS.framework */,
-				2B3EF0EAE78EB811A026FD2B /* Pods_Designable_watchOS.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		9CC0E601748303F10CB305A0 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				5DC616DC2BF1BBBD425B6A80 /* Pods-Designable IOS.debug.xcconfig */,
-				695DB6BDF2CFA3E4AAE0707D /* Pods-Designable IOS.release.xcconfig */,
-				52CE241A1C6D98C8B9D1EC1B /* Pods-Designable macOS.debug.xcconfig */,
-				1B3E608E494781441EA4D4AE /* Pods-Designable macOS.release.xcconfig */,
-				02CAEC26F056791F655A8C18 /* Pods-Designable tvOS.debug.xcconfig */,
-				0E88D285AC897DFE757CCF2F /* Pods-Designable tvOS.release.xcconfig */,
-				16E0CA8E52FF4CC28FEB80AC /* Pods-Designable watchOS.debug.xcconfig */,
-				68101327D9A2603DCE1B6143 /* Pods-Designable watchOS.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		CB1123F6256BF82700215E47 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,14 +153,21 @@
 			path = DesignableTests;
 			sourceTree = "<group>";
 		};
+		CB22D93826B8807800F5BCE3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB22D93926B8807800F5BCE3 /* ObserverList.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CB30D6BD256ADAB400EE2C61 = {
 			isa = PBXGroup;
 			children = (
 				CB30D718256ADE2E00EE2C61 /* Sources */,
 				CB1123F6256BF82700215E47 /* Tests */,
 				CB30D6CA256ADB0C00EE2C61 /* Products */,
-				9CC0E601748303F10CB305A0 /* Pods */,
-				61D42C5D7048629AF03883F0 /* Frameworks */,
+				CB22D93826B8807800F5BCE3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -289,11 +272,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB30D6DB256ADB0D00EE2C61 /* Build configuration list for PBXNativeTarget "Designable IOS" */;
 			buildPhases = (
-				A4CC21879EC8FAF2FE84E949 /* [CP] Check Pods Manifest.lock */,
 				CB30D6C4256ADB0C00EE2C61 /* Headers */,
 				CB30D6C5256ADB0C00EE2C61 /* Sources */,
 				CB30D6C6256ADB0C00EE2C61 /* Frameworks */,
 				CB30D6C7256ADB0C00EE2C61 /* Resources */,
+				CB22D93C26B8807800F5BCE3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -308,7 +291,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB30D6FD256ADB5000EE2C61 /* Build configuration list for PBXNativeTarget "Designable tvOS" */;
 			buildPhases = (
-				30C438DB7B0386F71FBFC847 /* [CP] Check Pods Manifest.lock */,
 				CB30D6F3256ADB5000EE2C61 /* Headers */,
 				CB30D6F4256ADB5000EE2C61 /* Sources */,
 				CB30D6F5256ADB5000EE2C61 /* Frameworks */,
@@ -401,53 +383,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		30C438DB7B0386F71FBFC847 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Designable tvOS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A4CC21879EC8FAF2FE84E949 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Designable IOS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CB112405256BF9AE00215E47 /* Sources */ = {
@@ -856,7 +791,6 @@
 		};
 		CB30D6DC256ADB0D00EE2C61 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5DC616DC2BF1BBBD425B6A80 /* Pods-Designable IOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -939,7 +873,6 @@
 		};
 		CB30D6DD256ADB0D00EE2C61 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 695DB6BDF2CFA3E4AAE0707D /* Pods-Designable IOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1016,7 +949,6 @@
 		};
 		CB30D6FE256ADB5000EE2C61 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 02CAEC26F056791F655A8C18 /* Pods-Designable tvOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1099,7 +1031,6 @@
 		};
 		CB30D6FF256ADB5000EE2C61 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0E88D285AC897DFE757CCF2F /* Pods-Designable tvOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
