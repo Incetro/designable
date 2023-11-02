@@ -130,7 +130,7 @@ extension Designer: DesignManipulator {
     ///   - designable: a new appearance observer
     ///   - keyPath: designable appearance keyPath
     ///   - immediateCall: true if need to design view immediately
-    open func add<D: Designable>(
+    public func add<D: Designable>(
         designable: D,
         for keyPath: KeyPath<Appearance, D.Appearance>,
         withImmediateCall immediateCall: Bool
@@ -173,7 +173,7 @@ extension Designer: DesignManipulator {
     ///   - appearance: a new appearance type
     ///   - animationDuration: changing appearance animation duration
     ///   - isAnimated: true if need to animate appearance changing
-    open func set(appearance: AppearanceType, animationDuration: Double, isAnimated: Bool) {
+    public func set(appearance: AppearanceType, animationDuration: Double, isAnimated: Bool) {
         let newAppearance = appearanceProvider(appearance)
         self.appearance = newAppearance
         let data: Data
